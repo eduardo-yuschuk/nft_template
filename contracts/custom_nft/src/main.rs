@@ -17,7 +17,7 @@ use core::result::Result;
 use nft_base::*;
 use nft_base::error::*;
 use nft_base::helper::*;
-use nft_base::extension::OnlyOwner;
+use nft_base::extensions::OnlyOwner;
 
 pub struct Custom;
 
