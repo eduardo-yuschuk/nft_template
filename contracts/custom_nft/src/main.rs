@@ -17,6 +17,7 @@ use core::result::Result;
 use nft_base::*;
 use nft_base::error::*;
 use nft_base::helper::*;
+use nft_base::extension::OnlyOwner;
 
 pub struct Custom;
 
@@ -34,7 +35,7 @@ impl Custom {
     }
 }
 
-define_script! { ComposedScript(Base) { } }
+define_script! { ComposedScript(Base, OnlyOwner, Custom) { } }
 
 pub fn main() -> Result<(), Error> {
     let nft_type = load_script()?;
