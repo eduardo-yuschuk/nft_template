@@ -19,6 +19,8 @@ pub struct Custom;
 
 impl Custom {
     pub fn handle_creation(_nft_type: &Script) -> Result<(), Error> {
+        // if we found some invalid condition
+        // Err(Error::NFTDataInvalid)
         Ok(())
     }
 
